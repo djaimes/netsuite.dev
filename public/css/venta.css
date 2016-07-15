@@ -1,0 +1,218 @@
+@font-face {
+	    font-family: MiOpenSans;
+	    src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+	    font-family: MiRaleway;
+	    src: url(../fonts/raleway/Raleway-Regular.ttf);
+}
+	
+body {
+    background: #f2f2f2;
+    color: #000305;
+    font-size: 87.5%; /* Base font size: 14px */
+    font-family: MiOpenSans;
+    line-height: 1.429;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  
+.body{
+	clear: both;
+	margin: 0 auto;
+	width: 800px;
+}
+  /*
+    Encabezado
+  */
+  
+  #banner {
+    margin: 0 auto;
+    padding: 1em 0 0 0;
+  }
+ 
+    /* 
+		Banner 
+	*/
+    
+	#banner h1 {
+		font-family: MiRaleway;
+		font-size: 2em;
+		text-align: center;
+	}
+	
+	#banner img {
+		display: block;
+		margin: 0 auto;
+	}
+ 
+    /* Main Nav */
+     #banner nav {
+       background: #000305;
+       font-size: 1.143em;
+       height: 40px;
+       line-height: 30px;
+       margin: 0 auto 1em auto;
+       padding: 0;
+       text-align: center;
+       width: 800px;
+     }
+  
+     #banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
+     #banner nav li {float: left; display: inline; margin: 0;}
+  
+     #banner nav a:link, #banner nav a:visited {
+       color: #fff;
+       display: inline-block;
+       height: 30px;
+       padding: 5px 1.5em;
+       text-decoration: none;
+     }
+     #banner nav a:hover, #banner nav a:active,
+     #banner nav .active a:link, #banner nav .active a:visited {
+       background: #C74451;
+       color: #fff;
+       text-shadow: none !important;
+     }
+	 
+#articulo {
+	width: 30%;
+	float: left;
+	height: 550px;
+	margin: 5px;
+}
+
+#divProductosSugeridos {
+	width: 78%;
+	float: left;
+	background: white;
+	border: 1px solid #D8D8D8;
+	margin: 5px 0 0 0;
+	overflow: scroll;
+}
+
+.productoSelected {
+	color: white;
+	background: #4285f4;
+	cursor: default;
+}
+
+.productoUnselected {
+	color: black;
+	background: white;
+}
+
+label {
+    display:block;
+    margin-top:20px;
+}
+
+input {
+    display:block;
+    width: 75%;
+    height: 30px;
+    background: white;
+    border: 1px solid #dedede;
+    padding: 5px;
+    margin-top:3px;
+    font-size:1em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+	float: left;
+}
+
+input:focus {
+    border: 1px solid #97d6eb;
+}
+
+#submit {
+    width: 15%;
+    height: 40px;
+    cursor:pointer;
+    background-color: #4285f4;
+    color: white;
+	float: left;
+	margin-left: 5px;
+	clear: right;
+}
+
+#submit:hover{
+    opacity: 0.8;
+}
+
+#nota {
+	width: 65%;
+	height: 550px;
+	float: right;
+	margin: 5px;
+	background: white;
+	overflow: auto;
+	font-family: "Courier new";
+	font-size: 1.2em;
+	border: 1px solid #B0B0B0;
+}
+
+#headerNota {
+	font-weight: bold;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse; /* evita el doble border */
+	width: 100%;			   /* todo el ancho del contenedor */
+	margin: 15px 0 15px 0;
+}
+
+table, th, td {
+
+}
+
+.alinearDerecha {
+	text-align: right;
+	padding: 0 10px 0 0;
+	vertical-align: top;
+}
+
+.alinearIzquierda {
+	text-align: left;
+	padding: 0 0 0 7px;
+}
+
+.totales{
+	font-weight: bold;
+}
+
+#cantidadConLetras{
+	margin: 15px;
+	font-size: 0.9em;
+}
+
+#ticketDeCompra{
+	float: left;
+	width: 70%;
+	padding: 0 0 0 7px;
+}
+
+#qrcode {
+	float:left;
+	width: 20%;
+	text-align: right;
+	padding: 0 7px 0 0;
+}
+
+#pieDeNota {
+	text-align: center;
+	background: black;
+	color: white;
+	margin: 15px auto;
+	padding: 3px;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}

@@ -1,0 +1,166 @@
+@font-face{
+    font-family: MiOpenSans;
+    src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+}
+
+@font-face{
+    font-family: MiRaleway;
+    src: url(../fonts/raleway/Raleway-Bold.ttf);
+}
+
+html{
+    font-family: MiOpenSans;
+	width: 800px;
+	height: 700px;
+	margin: 0 auto;
+}
+
+/* HTML 5 */
+
+.body {
+	clear: both;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.login {
+    display:block;
+    margin:0 auto;
+    width:320px;
+}
+
+form {
+    margin:0 auto;
+}
+
+label {
+    display:block;
+    margin-top:20px;
+}
+
+input {
+    display:block;
+    width: 300px;
+    height:27px;
+    background:#efefef;
+    border: 1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+input:focus {
+    border:1px solid #97d6eb;
+}
+
+#submit {
+    width: 200px;
+    height:50px;
+    cursor:pointer;
+    background-color: #28CB75;
+    color: white;
+    margin: 10px auto;
+}
+
+#submit:hover{
+    opacity: 0.8;
+}
+
+img {
+	display: block;
+    margin: 0 auto;
+}
+
+.errorVisible {
+    color: red;
+    visibility: visible;
+    font-size: 0.7em;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2px;
+}
+
+.errorNoVisible {
+    visibility: hidden;
+}
+
+#nombreSistema {
+    font-family: MiRaleway; 
+    font-size: 1.5em;
+    padding: 5px;
+    display: block;
+    color: #6612A2;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Main Nav */
+#banner {
+  margin: 0 auto;
+  padding: 0 0 0 0;
+}
+
+#banner h1 {
+	font-size: 2.0em;
+	line-height: 0.6;
+}
+
+#banner nav {
+   background: #607D8B; /* verde plomo */
+   font-size: 1.143em;
+   height: 40px;
+   line-height: 30px;
+   margin: 0 auto 2em auto;
+   padding: 0;
+   text-align: left;
+   width: 100%;
+ }
+ 
+ #banner nav ul {
+	 list-style: none;
+	 margin: 0 auto;
+	 width: 100%;
+ }
+ 
+ #banner nav li {
+	 float: left;
+	 display: inline; 
+	 margin: 0;
+ }
+ 
+ #banner nav a:link, #banner nav a:visited {
+   color: #fff;
+   display: inline-block;
+   height: 30px;
+   padding: 5px 1.5em;
+   text-decoration: none;
+ }
+ 
+ #banner nav a:hover, #banner nav a:active,
+ #banner nav .active a:link, #banner nav .active a:visited {
+   background: #94B1C0;
+   color: #fff;
+   text-shadow: none !important;
+ }
+ 
+ #articulo, #enviar{
+	 width:50%;
+	 height: 50%;
+ }
+ 
+ #nota{
+	 width: 50%;
+	 height: 100%;
+ }
+ 
+ footer{
+	 background: #607D8B; /* verde plomo */
+	 color: #fff;
+	 width: 100%;
+	 height: 5%;
+	 text-align: center;
+ }

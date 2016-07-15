@@ -1,0 +1,82 @@
+@font-face {
+	    font-family: MiOpenSans;
+	    src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+	    font-family: MiRaleway;
+	    src: url(../fonts/raleway/Raleway-Regular.ttf);
+}
+	
+body {
+    background: #f2f2f2;
+    color: #000305;
+    font-size: 87.5%; /* Base font size: 14px */
+    font-family: MiOpenSans;
+    line-height: 1.429;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  
+.body{
+	clear: both;
+	margin: 0 auto;
+	width: 100%;
+}
+  /*
+    Encabezado
+  */
+  
+  #banner {
+    margin: 0 auto;
+    padding: 0 0 0 0;
+  }
+ 
+    /* 
+		Banner 
+	*/
+    
+	#banner h1 {
+		font-family: MiRaleway;
+		font-size: 1.2em;
+		text-align: center;
+	}
+	
+	#banner img {
+		display: block;
+		margin: 0 auto;
+	}
+ 
+    /* Main Nav */
+     #banner nav {
+       background: #000305;
+       font-size: 1.143em;
+       height: 40px;
+       line-height: 30px;
+       margin: 0 auto;
+       padding: 0;
+       text-align: center;
+       width: 100%;
+     }
+  
+     #banner nav ul {list-style: none; margin: 0 auto; width: 100%;}
+     #banner nav li {float: left; display: inline; margin: 0;}
+  
+     #banner nav a:link, #banner nav a:visited {
+       color: #fff;
+       display: inline-block;
+       height: 30px;
+       padding: 5px 1.5em;
+       text-decoration: none;
+     }
+     #banner nav a:hover, #banner nav a:active,
+     #banner nav .active a:link, #banner nav .active a:visited {
+       background: #C74451;
+       color: #fff;
+       text-shadow: none !important;
+     }
+p {
+	padding: 0;
+	margin: 0;
+}

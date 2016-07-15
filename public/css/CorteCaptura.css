@@ -1,0 +1,40 @@
+/* Mis propios fonts */
+
+@font-face{
+    font-family: MiOpenSans;
+    src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+}
+
+@font-face{
+    font-family: MiRaleway;
+    src: url(../fonts/raleway/Raleway-Bold.ttf);
+}
+
+h1 {
+	font-family: MiRaleway;
+	display: block;
+}
+
+label {
+	font-family: MiRaleway;
+	display: block;
+	font-size: 1.5em;
+	margin-top: 1.7em;
+}
+
+input {
+	font-family: MiOpenSans;
+	display: block;
+	font-size: 1.2em;
+	margin-top: 0.5em;
+	height: 2em;
+	width: 300px;
+}
+
+#grabar {
+    width: 300px;
+    height:50px;
+    cursor:pointer;
+    background-color: #28CB75;
+    color: white;
+}

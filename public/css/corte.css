@@ -1,0 +1,64 @@
+/* Mis propios fonts */
+
+@font-face{
+    font-family: MiOpenSans;
+    src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+}
+
+@font-face{
+    font-family: MiRaleway;
+    src: url(../fonts/raleway/Raleway-Bold.ttf);
+}
+
+h1 {
+	font-family: MiRaleway;
+}
+
+table, th {
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+table, th, td {
+	/*border: 1px solid black;*/
+	border-bottom: 1px solid #ddd;
+}
+
+tr {
+	height: 2em;
+}
+
+/* Ilumina la fila por la que pasa el cursor */
+tr:hover td {
+	/* Hay que poner el td para que funcione correctamente */
+	background-color: #607D8B;
+	color: white;
+	cursor: default;
+}
+
+/* Hace que las filas impares sean tipo zebra */
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+th {
+	font-family: MiRaleway;
+	height: 2em;
+	text-align: center;
+	background-color: #607D8B;
+	color: white;
+}
+
+td {
+	font-family: MiOpenSans;
+	text-align: right;
+	width: 5em;
+	padding-right: 1.2em;
+}
+
+tfoot {
+	font-family: MiRaleway;
+	height: 2em;
+	background-color: #607D8B;
+	color: white;
+}
