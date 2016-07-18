@@ -124,25 +124,25 @@ class Factura_Xml
                                     )';
 
         $this->db->prepare($sql);
-        $this->db->query();
-
-        //grabar la tabla detalle
-        foreach($this->detalle as $Concepto) {
-            $sql = 'INSERT INTO detalle(UUID, cantidad, unidad, noidentificacion, descripcion, valorunitario, importe) 
-                    VALUES( "'.$this->factura['UUID'].'", 
-                            '.$Concepto['cantidad'].',
-                            "'.$Concepto['unidad'].'",
-                            "'.$Concepto['noIdentificacion'].'",
-                            "'.$Concepto['descripcion'].'",
-                            '.$Concepto['valorUnitario'].',
-                            '.$Concepto['importe'].'
+        
+        if ($result = $this->db->query()) {
+            //grabar los conceptos
+            foreach($this->detalle as $Concepto) {
+                $sql = 'INSERT INTO detalle(UUID, cantidad, unidad, noidentificacion, descripcion, valorunitario, importe) 
+                        VALUES( "'.$this->factura['UUID'].'", 
+                                '.$Concepto['cantidad'].',
+                                "'.$Concepto['unidad'].'",
+                                "'.$Concepto['noIdentificacion'].'",
+                                "'.$Concepto['descripcion'].'",
+                                '.$Concepto['valorUnitario'].',
+                                '.$Concepto['importe'].'
                 )';
-            $this->db->prepare($sql);
-            $this->db->query();
+                $this->db->prepare($sql);
+                $result = $this->db->query();
+           }
         }
-
         $this->db->disconnect();
-        return TRUE;
+        return $result;
     }
 }
 ?>

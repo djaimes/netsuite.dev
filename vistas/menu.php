@@ -23,7 +23,10 @@
 				<a href="index.php?corte&metodo=captura">Corte</a>
 			</li>
 			<li>
-				<a href="index.php?corte&metodo=cambio"> Mod. Corte</a>
+				<a href="index.php?corte&metodo=cambio"> Modificar Corte</a>
+			</li>
+			<li>
+				<a href="index.php?factura&metodo=importar">Importar Facturas</a>
 			</li>
 			<li>
 				<a href="index.php?salir">Salir</a>

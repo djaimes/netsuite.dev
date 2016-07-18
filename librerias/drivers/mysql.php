@@ -30,7 +30,7 @@ class Mysql_Driver extends Database_Library {
 			$this->connection = new mysqli($host, $user, $password, $database); 
 	
 		} catch (Exception $e){
-			echo '<h1>La base de datos no est&aacute; accesible</h1>'; 
+			return FALSE;
 			exit;
 		}
 		return TRUE;
